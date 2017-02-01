@@ -2,12 +2,15 @@
 
 
 
-h1 {
-  color:$primary;
-}
-
-
 body{ font-size: 16px; }
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color:$black-dark ;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    background: $half-white;
+}
 
 header{
   position: fixed;
@@ -93,3 +96,141 @@ footer {
 // .light-blue{background:$lignt-blue};
 
 
+.bgPart {
+    height: 20px;
+    padding: 100px 0;
+    width: 100%;
+
+    position: relative;
+    z-index: 2;
+    background:rgba($gray-dark ,0.5);
+    // height:100vh;
+}
+
+.intro {
+    background-attachment: fixed;
+
+    h1 {
+      color:$white;
+      font-size:42px;
+      text-transform: uppercase;
+      text-shadow:1px 1px 1px $primary;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-family:'regan-extraboldregular', Helvetica, Arial, sans-serif;
+    }
+
+    b {
+      color:$secondary;
+      font-weight:normal;
+      font-family:'regan-lightregular', Helvetica, Arial, sans-serif;
+      font-size:18px;
+    }
+}
+
+
+.coverBG {
+    background: no-repeat;
+    background-size: cover;
+}
+
+.tb-row {
+    display: table;
+}
+
+.tb-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.search-mate {
+  padding:25px;
+  background:$white;
+  max-width: 860px;
+  margin: 30px auto;
+
+  .search-main {
+    width: 100%;
+    border:1px solid transparent;
+    color:$gray-dark;
+    padding: 5px;
+    font-family:'latolight',Helvetica,Arial,sans-serif;
+    font-size:18px;
+    min-height:55px;
+  } // search-main
+
+  .shorten {
+    a {
+      background-color:$secondary;
+      color:$gray-dark;
+      text-transform: uppercase;
+      padding: 15px;
+      display: block;
+      font-size:16px;
+      text-align: center;
+      text-shadow:1px 1px 1px $half-white;
+      // max-width:50px;
+    }
+  }
+
+} // search-mate
+
+
+.dropbtn {
+    background-color: $primary;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgba($primary, 0.8);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba($black,0.2);
+    right: 0;
+}
+
+.dropdown-content a {
+    color: $black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: $half-white}
+
+.show {display:block;}
+
+
+.upload {
+  .dropdown {
+    position: absolute;
+    right: -60px;
+    top: 0;
+
+      .dropbtn {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color:rgba($gray-dark, 0.1);
+
+          i {
+            color:$gray-dark;
+          }
+      }
+  }
+}

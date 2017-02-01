@@ -40,10 +40,10 @@ input[type="submit"] {
 
 ol, ul { 
 	list-style:none;
-	
-		li { 
-			list-style-type:none; }
-	 }
+  li {  
+      list-style-type:none; 
+    }
+}
 
 
 .clear { 
@@ -99,7 +99,7 @@ p {
 	padding-right:15px; }
 
 html { 
-	background-color:antiquewhite; 
+	background-color:$half-white; 
 	height: 100vh;}
 
 
