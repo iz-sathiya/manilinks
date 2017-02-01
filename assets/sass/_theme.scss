@@ -1,0 +1,95 @@
+/* Theme .scss*/
+
+
+
+h1 {
+  color:$primary;
+}
+
+
+body{ font-size: 16px; }
+
+header{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  line-height: 108px;
+  height: 108px;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  z-index: 3;
+
+	  &.sticky {
+		  line-height:90px;
+		  height:90px;
+		  background: $gray;
+		  text-align: left;
+		  padding-left: 20px;
+
+         a {  
+  			padding: 20px 25px;
+  			font-size: 16px;
+
+  		}
+
+	}
+
+  ul{
+  	float:right;
+  	
+  	li {
+  		float: left;
+  		a {
+  			padding: 20px 25px;
+  			color:$white; 
+
+  		} // header > ul > li > a
+  	}  // header > ul > li
+  } // header > ul
+} // header
+
+
+
+header.sticky .main-logo, header .sticky-logo  {  display: none;}
+header.sticky .sticky-logo, header .main-logo { display: block;}
+header.sticky .logo a { padding: 0px;  margin-top: 11px;  display: block;}
+
+main {
+    background:url(../images/home-main-bg.jpg) no-repeat center;
+    background-size: 100%;
+  	height:100vh;
+  	position:relative;
+  	z-index:2; 
+
+  	&:before {
+		content:"";
+	  	width:100%;
+	  	height:100vh;
+	  	background-color:rgba($gray-dark, 0.5);
+	  	position:absolute;
+	  	z-index:1;
+  	} // main:before    
+} // main
+
+
+
+.light-blue
+{
+    background: $half-white;
+    height:500px;
+}
+
+
+.gray-bg {
+
+	background:$gray;
+	height:500px;
+}
+
+footer {
+  background: $footer-bg; height: 50px;
+}
+
+// .light-blue{background:$lignt-blue};
+
+

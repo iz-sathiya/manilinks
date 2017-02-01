@@ -10289,14 +10289,14 @@ html {
   height: 100vh; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #3d3d3d; }
+  color: #27a5b7; }
 
 h1, h2, h3 {
   margin-bottom: 5px;
   padding-bottom: 15px; }
 
 a {
-  color: #3d3d3d;
+  color: #27a5b7;
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
   -ms-transition: color 0.3s ease;
@@ -10308,10 +10308,76 @@ a {
 .test {
   border: 1px solid red; }
 
+/* Theme .scss*/
 h1 {
-  color: red; }
+  color: #27a5b7; }
 
-h2 {
-  color: yellow; }
+body {
+  font-size: 16px; }
 
+header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  line-height: 108px;
+  height: 108px;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  z-index: 3; }
+  header.sticky {
+    line-height: 90px;
+    height: 90px;
+    background: gray;
+    text-align: left;
+    padding-left: 20px; }
+    header.sticky a {
+      padding: 20px 25px;
+      font-size: 16px; }
+  header ul {
+    float: right; }
+    header ul li {
+      float: left; }
+      header ul li a {
+        padding: 20px 25px;
+        color: white; }
+
+header.sticky .main-logo, header .sticky-logo {
+  display: none; }
+
+header.sticky .sticky-logo, header .main-logo {
+  display: block; }
+
+header.sticky .logo a {
+  padding: 0px;
+  margin-top: 11px;
+  display: block; }
+
+main {
+  background: url(../images/home-main-bg.jpg) no-repeat center;
+  background-size: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 2; }
+  main:before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(5, 43, 48, 0.5);
+    position: absolute;
+    z-index: 1; }
+
+.light-blue {
+  background: #f2f6ed;
+  height: 500px; }
+
+.gray-bg {
+  background: gray;
+  height: 500px; }
+
+footer {
+  background: #283e43;
+  height: 50px; }
+
+/* custom css Start */
+/* custom css End */
 /* Basic CSS */
