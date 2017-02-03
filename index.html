@@ -12,46 +12,48 @@
   </head>
   <body>
  
-  <header>
-    <div class="container">
-      
-      <!-- Logo -->
-      <div class="col-md-4">
+  
+
+
+
+<header role="banner" class="navbar navbar-fixed-top">
+      <div class="container">
+
+        <!-- Logo -->
+      <div class="col-sm-4">
         <strong class="logo">
-          <a href="">
-            <img src="assets/images/logo.png" alt="manilinks" class="main-logo" />  
-            </a>
-            <a href="">
-             <img src="assets/images/sticky-logo.png" alt="manilinks" class="sticky-logo" />
+          <a href="#0" title="Manylinks">
+            <img src="assets/images/logo.png" alt="Manilinks" class="main-logo" />   
+          </a>
+            <a href="#0" title="Manylinks">
+             <img src="assets/images/sticky-logo.png" alt="Manilinks" class="sticky-logo" />
               </a>
           </strong>
       </div>
 
-      <!-- Menu -->
-      <div class="col-md-8">
-        <nav>
-        <ul>
-          <li>
-            <a href="#0">About us</a>
-          </li>
+      <div class="col-sm-8">
+        <div class="navbar-header">
+          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
 
-          <li>
-            <a href="#0">Tools</a>
-          </li>
-          <li>
-            <a href="#0">Help</a>
-          </li>
-          <li>
-            <a href="#0">Contact</a>
-          </li>
-          <li>
-            <a href="#0">sign in</a>
-          </li>
-        </ul>
-        </nav>
+        <!-- navbar-inverse -->
+        <div class="home-nav side-collapse in">
+          <nav role="navigation" class="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#0">About</a></li>
+              <li><a href="#0">Tools</a></li>
+              <li><a href="#0">Help</a></li>
+              <li><a href="#0">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
-  </div>
-  </header>
+
+        
+        
+      </div>
+    </header>
 
 
   <section class="intro coverBG" data-bg="assets/images/home-main-bg.jpg">
@@ -219,26 +221,127 @@
               <label> MiniLinks Domain </label>
           </div>
           <div class="col-sm-6">
-            <input type="text" class="customized-text" placeholder="Enter Customized Text">
-            <label for="">Can contain Alphanumaric, hyphen, underscore only</label>
+            <input type="text" class="customized-text" placeholder="Enter Customized Text" readonly>
+            <label for="" class="info-text">Can contain Alphanumaric, hyphen, underscore only</label>
           </div>
-  
-              
-
         </div>
+        <div class="row">
+          <center>
+            <a href="#0" class="custom-search">Search</a>
+          </center>
+        </div>
+
       </form>
+    </div>
+
+    <div class="row">
+          <div class="vertical-add hidden-xs">
+            <center>
+              <img src="assets/images/google-ad-3.jpg" alt="">
+            </center>
+          </div>
+        </div>
+
+  </section>
+
+
+  <section class="site-info">
+    <div class="container">
+      <h3>Our world is now a collection of links. Mini Links helps you manage them. </h3>
+      <span>At it’s simplest function, Mini Links let’s you shorten a long URL to a shortend URL, and works much like Bitly or Goo.gl But this is just the beginning. There are "Many" more ways to shorten a link and many more ways to use them. </span>
+
+      <div class="row-plate cf">
+        <!-- Shorten Long Urls -->
+        <div class="col-sm-6">
+          <div class="single-info">
+            <b>Shorten Long Urls</b>
+            <p>A long Google Map link to the US White House becomes <a href="http://www.minilinks.me/gcTvbSU" target"_blank">www.minilinks.me/gcTvbSU</a> You can also use any of our other creative link shorteners like Us2.me, HeresMy.link or MapTo.me</p>
+          </div>
+        </div>
+
+        <!-- Customize Your Links -->
+        <div class="col-sm-6">
+          <div class="single-info">
+            <b>Customize Your Links</b>
+            <p>Finish a short link with a single word or phrase to make them your own. Like <a href="http://www.minilinks.me/WhiteHouse" target"_blank">www.minilinks.me/WhiteHouse </a> or <a href="http://www.mapto.me/WhiteHouse" target"_blank">www.mapto.me/WhiteHouse</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-plate cf">
+        <!-- Password Protect Your Links -->
+        <div class="col-sm-6">
+          <div class="single-info">
+            <b>Password Protect Your Links</b>
+            <p>Prevent forwarded links from being opened by unauthorized people. Easily assign a password to a link to protect it.</p>
+          </div>
+        </div>
+
+        <!-- Manage Your Links -->
+        <div class="col-sm-6">
+          <div class="single-info">
+            <b>Manage Your Links</b>
+            <p>Don’t forget about or loose your links, they’re your creations! Mini Links lets you keep your links and manage them like an online password protected bookmarks manager that works from any device, and on any browser. Never lose a bookmark or link again.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-plate cf">
+         <!-- Track your links -->
+          <div class="col-sm-6">
+            <div class="single-info">
+              <b>Track your links</b>
+              <p>See how many times your links are shared and where.</p>
+            </div>
+          </div>
+
+         <!-- Document to Link -->
+          <div class="col-sm-6">
+            <div class="single-info">
+              <b>Document to Link</b>
+              <p>  Upload Document, Get link, Share , Done!</p>
+            </div>
+          </div>
+      </div>
+      
+      <div class="row-plate cf">        
+        <!-- QR your Link -->
+        <div class="col-sm-6">
+          <div class="single-info">
+            <b>QR your Link</b>
+            <p>  Take any link, Attached a QR code that can be scanned by any mobile phone</p>
+          </div>
+        </div>
+        <!-- Card Your Link -->
+        <div class="col-sm-6">
+          <div class="single-info">
+            <b>Card Your Link</b>
+            <p> Now your links can live on your business and contact cards.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-plate cf">
+          <!-- Link Lists -->
+          <div class="col-sm-6 center-block">
+            <div class="single-info">
+              <b>Link Lists</b>
+              <p> See it on Amazon, Add it to birthday list. Have Twitter and Facebook account, add to Contact List. Create your own link lists.</p>
+            </div>
+          </div>  
+      </div>
+
+      <div class="row vertical-add hidden-xs">
+        <center>
+          <img src="assets/images/google-ad-4.jpg" alt="">
+        </center>
+      </div>
+
     </div>
   </section>
 
 
 
-
-
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
 
 

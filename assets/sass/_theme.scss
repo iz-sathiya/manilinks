@@ -10,7 +10,7 @@
 body{ font-size: 16px; }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family:'latolight',Helvetica,Arial,sans-serif;
     color:$black-dark ;
     font-size: 18px;
     text-rendering: optimizeLegibility;
@@ -20,47 +20,45 @@ body {
 header{
   position: fixed;
   width: 100%;
-  text-align: center;
-  line-height: 108px;
-  height: 108px;
+  // text-align: center;
   color: #fff;
   font-family: 'PT Sans', sans-serif;
+  padding:30px 10px;
   z-index: 3;
 
 	  &.sticky {
-		  line-height:90px;
-		  height:90px;
 		  background: $gray;
-		  text-align: left;
-		  padding-left: 20px;
+      padding: 10px;
+       }
 
-         a {  
-  			padding: 20px 25px;
-  			font-size: 16px;
-
-  		}
-
-	}
-
-  ul{
-  	float:right;
-  	
-  	li {
-  		float: left;
-  		a {
-  			padding: 20px 25px;
-  			color:$white; 
-
-  		} // header > ul > li > a
-  	}  // header > ul > li
-  } // header > ul
 } // header
+
+
+.home-nav {
+  background-color:transparent;
+    ul {
+      float: right;
+
+      li {
+        a {
+          color:$white;
+          font-family:'latolight',Helvetica,Arial,sans-serif;
+          font-size:16px;
+
+          &:hover {
+            background-color:$secondary;
+            color:$gray-dark;
+          }
+        }
+      }
+    }
+   }
 
 
 
 header.sticky .main-logo, header .sticky-logo  {  display: none;}
 header.sticky .sticky-logo, header .main-logo { display: block;}
-header.sticky .logo a { padding: 0px;  margin-top: 11px;  display: block;}
+header.sticky .logo a { display: block;}
 
 main {
     background:url(../images/home-main-bg.jpg) no-repeat center;
@@ -474,9 +472,7 @@ footer {
 
 .centerPart {
     height: 20px;
-    padding: 100px 0;
     width: 100%;
-
     position: relative;
     z-index: 2;
     // height:100vh;
@@ -489,7 +485,7 @@ footer {
   .form-mate {
     max-width: 900px;
     padding: 50px 30px;
-    background-color:$black-dark;
+    background-color:rgba($black-dark, 0.9);
     margin: 0 auto;
     @include border-radius(3px);
     background-image: url('../images/pattern-strip.png');
@@ -523,6 +519,7 @@ footer {
           background-origin: content-box !important;
           background:url('../images/down.png') no-repeat right center;
           color:$secondary;
+          border-color:rgba($white, 0.3);
 
           option {
             color:$gray-dark; 
@@ -539,6 +536,10 @@ footer {
         @include border-radius(3px);
         font-size:14px;
         padding:6px 15px;
+
+        &[readonly] {
+          cursor: no-drop;
+        }
 
       }
 
@@ -558,6 +559,100 @@ footer {
   }
 }
 
+// custom-search 
+.custom-search {
+  background-color:$secondary;
+  color:$gray-dark;
+  text-transform: uppercase;
+  padding:8px 15px;
+  display: block;
+  font-size:16px;
+  text-align: center;
+  text-shadow:1px 1px 1px $half-white;
+  @include border-radius(3px);
+  max-width: 120px;
+  margin-top: 25px;
+  // margin-bottom: 25px;
+} // custom-search
+
+.info-text {
+  opacity: 0.5;
+}
+
+.vertical-add {
+  margin-top: 50px;}
+
+
+  .site-info{
+    padding: 70px 0;
+    h3 {
+      font-family:'regan-lightregular',Helvetica,Arial,sans-serif;
+      font-size:30px;
+      color:$secondary;
+    }
+
+    span {
+      color:rgba($black-dark, 0.6);
+      font-family:'latolight',Helvetica,Arial,sans-serif;
+      font-size:18px; }
+  }
+
+  
+  .row-plate {
+    padding-top: 20px;
+
+    .single-info {
+
+      border:1px solid rgba($gray-dark, 0.1);
+      background-color:$white;
+      transition: box-shadow .3s ease-out;
+      padding: 20px;
+
+      b {
+        font-weight: bold;
+        color:$primary;
+        display: block;
+        margin-bottom: 5px;
+        font-family:'latolight',Helvetica,Arial,sans-serif;
+      } // single-info b
+
+      p {
+        font-family:'latolight',Helvetica,Arial,sans-serif;
+        font-size:14px;
+      } // single-info p
+
+      a {
+        color:$primary;
+      } // single-info a
+
+      &:hover {
+        box-shadow: 0 0 20px 5px rgba($gray-dark,0.1);
+      } // single-info:hover
+    } // single-info
+  } // row-plate
 
 
 
+      @media screen and (max-width: 768px) {
+          .side-collapse-container{
+              width:100%;
+              position:relative;
+              left:0;
+              transition:left .4s;
+          }
+          .side-collapse-container.out{
+              left:200px;
+          }
+          .side-collapse {
+              top:50px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+          }
+          .side-collapse.in {
+              width:0;
+          }
+      }
