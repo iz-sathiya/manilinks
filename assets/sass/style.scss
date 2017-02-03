@@ -62,7 +62,22 @@ $asset-base-path: '../assets' !default;
 
 /* custom css Start */
 
-
+@mixin border-radius($radius: $default-border-radius, $vertical-radius: false) {
+  @include with-each-prefix(border-radius, $border-radius-threshold) {
+    @if $current-prefix == -webkit {
+      // Legacy Webkit didn't understand the official shorthand syntax for specifying a vertical radius.
+      $legacy-webkit-radius: first-value-of($radius);
+      @if $vertical-radius {
+        $legacy-webkit-radius: append($legacy-webkit-radius, first-value-of($vertical-radius));
+      }
+      @include prefix-prop(border-radius, $legacy-webkit-radius);
+    }
+    @else {
+      // Official syntax for everyone else
+      @include prefix-prop(border-radius, if($vertical-radius, #{$radius} / #{$vertical-radius}, $radius));
+    }
+  }
+}
 
 
 
