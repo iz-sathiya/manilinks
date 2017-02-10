@@ -84,3 +84,9 @@ $asset-base-path: '../assets' !default;
 /* custom css End */
 
 /* Basic CSS */
+
+
+// Responsive style
+
+@media (min-width: $break-sm) { }
+@media (max-width: $break-sm) { }

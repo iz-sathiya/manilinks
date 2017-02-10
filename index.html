@@ -16,43 +16,63 @@
 
 
 
-<header role="banner" class="navbar navbar-fixed-top">
+<header role="header" class="navbar navbar-fixed-top">
       <div class="container">
 
         <!-- Logo -->
-      <div class="col-sm-4">
-        <strong class="logo">
-          <a href="#0" title="Manylinks">
-            <img src="assets/images/logo.png" alt="Manilinks" class="main-logo" />   
-          </a>
+        <div class="col-sm-4">
+          <strong class="logo">
+            <a href="#0" title="Manylinks">
+              <img src="assets/images/logo.png" alt="Manilinks" class="main-logo" />   
+            </a>
             <a href="#0" title="Manylinks">
              <img src="assets/images/sticky-logo.png" alt="Manilinks" class="sticky-logo" />
-              </a>
-          </strong>
-      </div>
-
-      <div class="col-sm-8">
-        <div class="navbar-header">
-          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </a>
+            </strong>
         </div>
 
-        <!-- navbar-inverse -->
-        <div class="home-nav side-collapse in">
-          <nav role="navigation" class="navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#0">About</a></li>
-              <li><a href="#0">Tools</a></li>
-              <li><a href="#0">Help</a></li>
-              <li><a href="#0">contact</a></li>
-            </ul>
-          </nav>
+        <div class="col-xs-6 col-sm-8">
+          
+          <div class="col-sm-10">
+            <div class="navbar-header">
+              <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            
+            <!-- navbar-inverse -->
+            <div class="home-nav side-collapse in">
+              <nav role="navigation" class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="no-hover GroupNavTrigger">
+                  <a href="#0">
+                    <img src="assets/images/group-nav.png" alt="" />
+                  </a>
+                </li>
+                  <li class="active">
+                    <a href="#0">Sign in</a>
+                  </li>
+                </ul>
+
+                <ul class="nav navbar-nav">
+                  <li><a href="#0">About</a></li>
+                  <li><a href="#0">Tools</a></li>
+                  <li><a href="#0">Help</a></li>
+                  <li><a href="#0">contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
         </div>
 
-      </div>
+        <div class="col-xs-6 col-sm-12 hidden-landing">
+          <div class="mobileMenu row">
+            <div class="mnav home-nav">
+              <ul class="nav navbar-nav">
+                &nbsp;
+              </ul></div>
+          </div>
+        </div>
 
-        
-        
-      </div>
     </header>
 
 
@@ -125,16 +145,17 @@
             
             <div class="inline-blocks">
               <div class="t-flex">
-                <a href="#0" class="">
+                <a href="#0" class="" data-toggle="modal" data-target="#loginSignup">
                   <i class="icon-eye" data-animated="fadeInDown">&nbsp;</i>
                   <span>View Links <br />On Desktop's</span>
                 </a>
               </div>
             </div>
 
+
             <div class="inline-blocks">
               <div class="t-flex">
-                <a href="#0" class="">
+                <a href="#0" class="" data-toggle="modal" data-target="#share">
                   <i class="icon-share" data-animated="fadeInDown">&nbsp;</i>
                   <span>Add To <br />Shared Link</span>
                 </a>
@@ -149,7 +170,7 @@
 
             <div class="inline-blocks">
               <div class="t-flex">
-                <a href="#0" class="">
+                <a href="#0" class="" data-toggle="modal" data-target="#bookmark">
                   <i class="icon-bookmark" data-animated="fadeInDown">&nbsp;</i>
                   <span>Add To <br />Book Mark</span>
                 </a>
@@ -158,7 +179,7 @@
 
             <div class="inline-blocks">
               <div class="t-flex">
-                <a href="#0" class="">
+                <a href="#0" class="" data-toggle="modal" data-target="#contacts">
                   <i class="icon-contact" data-animated="fadeInDown">&nbsp;</i>
                   <span>Add To <br />Contacts</span>
                 </a>
@@ -183,7 +204,7 @@
 
             <div class="inline-blocks">
               <div class="t-flex">
-                <a href="#0" class="">
+                <a href="#0" class="" data-toggle="modal" data-target="#list">
                   <i class="icon-list" data-animated="fadeInDown">&nbsp;</i>
                   <span>Add To <br />List</span>
                 </a>
@@ -200,7 +221,7 @@
 
 
   <section class="custom-url coverBG" data-bg="assets/images/custom-url.jpg">
-    <div class="form-mate">
+    <div class="form-mate" data-animated="fadeInUp" data-delay="2">
       <center><h3>There's more than one way to shorten a link! - <span>Customize Now</span></h3></center>
       <form action="">
         <div class="row">
@@ -232,6 +253,71 @@
         </div>
 
       </form>
+
+      <div class="search-result">
+        <center>
+          <p>Yes! Your Customized URL <span>http://www.mapto.me/h1visa</span> is Available.</p>
+          <p>Get it before someone else does.</p>
+          <p>Or</p>
+          <p>Try one of these other MiniLinks links below - Thank You!</p>
+
+          <div class="text-center">
+            <a href="#0" class="btn btn-yellow">Get it Now Link Expire in one year !</a>
+          </div>
+        </center>
+      </div>
+
+      <div class="domain-list">
+        
+        <label for="default-0" class="btn btn-theme">
+          http://www.minilinks.me/h1Bvisa 
+          <input type="radio" name="domainList" value="default-0" id="default-0" class="badgebox">
+            <span class="badge">&check;</span>
+        </label>
+
+        <label for="default-1" class="btn btn-theme">
+          http://www.us2.me/h1Bvisa 
+          <input type="radio" name="domainList" value="default-1" id="default-1" class="badgebox">
+            <span class="badge">&check;</span>
+        </label>
+
+        <label for="default-2" class="btn btn-theme">
+          http://www.ewe2.me/h1Bvisa 
+          <input type="radio" name="domainList" value="default-2" id="default-2" class="badgebox">
+            <span class="badge">&check;</span>
+        </label>
+
+        <label for="default-3" class="btn btn-theme">
+          http://www.helptofind.me/h1Bvisa 
+          <input type="radio" name="domainList" value="default-3" id="default-3" class="badgebox">
+            <span class="badge">&check;</span>
+        </label>
+
+        <label for="default-4" class="btn btn-theme">
+          http://www.lnkto.us/h1Bvisa 
+          <input type="radio" name="domainList" value="default-4" id="default-4" class="badgebox">
+            <span class="badge">&check;</span>
+        </label>
+
+        <label for="default-5" class="btn btn-theme">
+          http://www.heresmy.link/h1Bvisa 
+          <input type="radio" name="domainList" value="default-5" id="default-5" class="badgebox">
+            <span class="badge">&check;</span>
+        </label>
+
+        <label for="default-6" class="btn btn-theme">
+          http://www.mapto.me/h1Bvisa 
+          <input type="radio" name="domainList" value="default-6" id="default-6" class="badgebox">
+            <span class="badge">&check;</span>
+        </label>
+
+        <label for="default-7" class="btn btn-theme">
+          http://www.zap2.me/h1Bvisa 
+          <input type="radio" name="domainList" value="default-7" id="default-7" class="badgebox">
+            <span class="badge">&check;</span>
+        </label>
+
+      </div>
     </div>
 
     <div class="row">
@@ -323,7 +409,7 @@
 
       <div class="row-plate cf">
           <!-- Link Lists -->
-          <div class="col-sm-6 center-block">
+          <div class="col-sm-6 center-block last-row">
             <div class="single-info">
               <b>Link Lists</b>
               <p> See it on Amazon, Add it to birthday list. Have Twitter and Facebook account, add to Contact List. Create your own link lists.</p>
@@ -340,6 +426,439 @@
     </div>
   </section>
 
+  <footer>
+    <div class="container">
+      <div class="col-sm-6">
+        <div class="copyright">
+          <p>Copyright &copy; 2017  All Rights Reserved</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="poweredby">
+          <p>
+            <a href="#0">manylinks.me</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- / Product Group navigation -->
+    <div class="GroupNav" style="display: none;">
+      <ul>
+        <li class="shorten">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Shorten</span>
+          </a>
+        </li>
+
+        <li class="share-it">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Share It</span>
+          </a>
+        </li>
+
+        <li class="code-it">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Code It</span>
+          </a>
+        </li>
+
+        <li class="card-it">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Card It</span>
+          </a>
+        </li>
+
+        <li class="draw-it">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Draw It</span>
+          </a>
+        </li>
+
+        <li class="calculator">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Calculator</span>
+          </a>
+        </li>
+
+        <li class="stop-watch">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Stop watch</span>
+          </a>
+        </li>
+
+        <li class="currency-convertor">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Currency Convertor</span>
+          </a>
+        </li>
+
+        <li class="loans-calculator">
+          <a href="">
+            <i class="" aria-hidden="true"></i>
+            <span>Loans Calculator</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Product Group navigation / -->
+
+
+    <!-- / Modal Box group -->
+
+    <!-- View Links On Desktop's Modal -->
+      <div class="modal fade" id="loginSignup" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-left">Login / Sign Up</h4>
+            </div>
+            <div class="modal-body">
+              <p><small>Sorry! You have not logged, Please Login or Register. Thank You!</small></p>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+              <div class="cf">
+                <div class="btn-group btn-group-justified">
+                  <a href="#" class="btn btn-theme">Sign in</a>
+                  <a href="#" class="btn btn-theme">Sign up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Add To Shared Link Modal -->
+      <div class="modal fade" id="share" role="share">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-left">Add Shared Link 
+                <a href="#0" class="view-link"><tt class="fa fa-link fa-fw"></tt>View Links</a>
+              </h4>
+            </div>
+            <div class="modal-body text-left">
+              <!-- <p>Sorry! You have not logged, Please Login or Register. Thank You!</p> -->
+                <div class="form-group">
+                    <div class="row cf">
+                      <div class="col-sm-12">
+                        <label for="">Link Title </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <select class="form-control" id="sel1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                              <label class="radio-inline">
+                                <input type="radio" name="optradio">New Category
+                              </label>
+                          </span>
+                          <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="cl-sm-12">
+                  <div class="form-group">
+                    <label for="">Short Url  </label>
+                    <input type="text" class="form-control" id="" placeholder="http://www.minilinks.me/RvXAHjd">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Long Url  </label>
+                    <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+                  </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <div class="cf">
+                <div class="btn-group btn-group-justified">
+                  <a href="#" class="btn btn-theme">Save Shared Link</a>
+                  <a href="#" class="btn btn-theme danger">Cancel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Add To List -->
+      <div class="modal fade" id="list" role="list">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-left">Add List </h4>
+            </div>
+            <div class="modal-body text-left">
+                <div class="form-group">
+                    <div class="row cf">
+                      <div class="col-sm-12">
+                        <label for="">Select Catecory </label>
+                      </div>
+                      <div class="col-sm-6">
+                        <select class="form-control" id="sel1">
+                          <option>My Links</option>
+                          <option>Custom</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                              <label class="radio-inline">
+                                <input type="radio" name="optradio">New Category
+                              </label>
+                          </span>
+                          <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="cl-sm-12">
+                  
+                  <div class="form-group">
+                    <label for="">Upload Image  </label>
+                    <!-- <input type="text" class="form-control" id="" placeholder="http://www.minilinks.me/RvXAHjd"> -->
+
+                    <div class="input-group image-preview">
+                      <span class="input-group-btn"> 
+                      <!-- image-preview-input -->
+                      <div class="btn btn-default image-pre-view-input btn-block"> 
+                        <!-- <i class="fa fa-upload fa-fw"></i> -->
+                        <!-- <span class="image-preview-input-title">Browse</span> -->
+                        <input type="file"  name="input-file-preview"/>
+                        <!-- rename it --> 
+                      </div>
+                      </span> 
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Title  </label>
+                    <input type="text" class="form-control" id="" placeholder="Ex:">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="">Topic  </label>
+                    <input type="text" class="form-control" id="" placeholder="Ex:">
+                  </div>
+
+
+                  <div class="form-group">
+                    <label for="">Notes  </label>
+                    <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+                  </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <div class="cf">
+                <div class="btn-group btn-group-justified">
+                  <a href="#" class="btn btn-theme">Save Contact</a>
+                  <a href="#" class="btn btn-theme danger">Cancel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add To Book Mark -->
+        <div class="modal fade" id="contacts" role="contacts">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-left">Add Contact 
+                <a href="#0" class="view-link"><tt class ="fa fa-user fa-fw"></tt>My Contacts</a></h4>
+              </div>
+              <div class="modal-body text-left">
+                <!--  -->
+                <div class="row">
+                  <div class="col-sm-12 search-wrapp">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <span class="input-group-btn">
+                        <a href="#0" class="btn btn-default">Go!</a>
+                      </span>
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+                <!--  -->
+                  <div class="form-group">
+                      <div class="row cf">
+                        <div class="col-sm-12">
+                          <label for="">Select Catecory </label>
+                        </div>
+                        <div class="col-sm-6">
+                          <select class="form-control" id="sel1">
+                            <option>My Links</option>
+                            <option>Custom</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio">New Category
+                                </label>
+                            </span>
+                            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="cl-sm-12">
+                    
+                    <div class="form-group">
+                      <label for="">Upload Image  </label>
+                      <!-- <input type="text" class="form-control" id="" placeholder="http://www.minilinks.me/RvXAHjd"> -->
+
+                      <div class="input-group image-preview">
+                        <span class="input-group-btn"> 
+                        <!-- image-preview-input -->
+                        <div class="btn btn-default image-pre-view-input btn-block"> 
+                          <!-- <i class="fa fa-upload fa-fw"></i> -->
+                          <!-- <span class="image-preview-input-title">Browse</span> -->
+                          <input type="file"  name="input-file-preview"/>
+                          <!-- rename it --> 
+                        </div>
+                        </span> 
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Name  </label>
+                      <input type="text" class="form-control" id="" placeholder="http://www.minilinks.me/RvXAHjd">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="">Mobile No  </label>
+                      <input type="text" class="form-control" id="" placeholder="http://www.minilinks.me/RvXAHjd">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Email  </label>
+                      <input type="email" class="form-control" id="" placeholder="http://www.minilinks.me/RvXAHjd">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Address  </label>
+                      <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+                    </div>
+
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+                <div class="cf">
+                  <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-theme">Save Contact</a>
+                    <a href="#" class="btn btn-theme danger">Cancel</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add To Book Mark -->
+          <div class="modal fade" id="bookmark" role="bookmark">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title text-left">Add Book Mark </h4>
+                </div>
+                <div class="modal-body text-left">
+                  <!-- <p>Sorry! You have not logged, Please Login or Register. Thank You!</p> -->
+                    <div class="form-group">
+                        <div class="row cf">
+                          <div class="col-sm-12">
+                            <label for="">Select Catecory </label>
+                          </div>
+                          <div class="col-sm-6">
+                            <select class="form-control" id="sel1">
+                              <option>My Links</option>
+                              <option>Custom</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optradio">New Category
+                                  </label>
+                              </span>
+                              <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="cl-sm-12">
+                      
+                      <div class="form-group">
+                        <label for="">Link Title  </label>
+                        <input type="text" class="form-control" id="" placeholder="http://www.minilinks.me/RvXAHjd">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">Short Url  </label>
+                        
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                              <label class="radio-inline"> https://minilink.me/ </label>
+                          </span>
+                          <input id="msg" type="text" class="form-control" name="msg" placeholder="RvXAHjd">
+                        </div>
+
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">Long Url  </label>
+                        <textarea name="" class="form-control" id="" cols="30" rows="3"></textarea>
+                      </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                  <div class="cf">
+                    <div class="btn-group btn-group-justified">
+                      <a href="#" class="btn btn-theme">Save Book Mark</a>
+                      <a href="#" class="btn btn-theme danger">Cancel</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- Modal Box group / -->
 
 
 
