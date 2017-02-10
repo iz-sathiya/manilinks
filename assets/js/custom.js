@@ -66,6 +66,7 @@ $(function(){
 
     // $('.tester > div').matchHeight();
        $('.row-plate .single-info').matchHeight();
+       $('.login-container .match-height').matchHeight();
 
     // sidebar menu
        var sideslider = $('[data-toggle=collapse-side]');
