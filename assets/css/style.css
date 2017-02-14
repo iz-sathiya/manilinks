@@ -10544,6 +10544,8 @@ header.sticky .logo a {
     background-color: rgba(255, 255, 255, 0.1); }
     .result-mate .copy i, .result-mate .view i {
       color: rgba(164, 200, 56, 0.8); }
+    .result-mate .copy span, .result-mate .view span {
+      border: 1px solid transparent; }
   .result-mate .view {
     margin-left: 25px; }
 
@@ -10818,7 +10820,7 @@ header.sticky .logo a {
   color: #052b30;
   text-transform: uppercase;
   padding: 8px 15px;
-  display: block;
+  display: inline-block;
   font-size: 16px;
   text-align: center;
   text-shadow: 1px 1px 1px #f2f6ed;
@@ -11079,7 +11081,8 @@ footer {
 [role="share"],
 [role="bookmark"],
 [role="contacts"],
-[role="list"] {
+[role="list"],
+.Background {
   background: #A71414 url(../images/diagmonds_@2X.png) repeat; }
 
 .modal-backdrop.in {
@@ -11251,9 +11254,9 @@ input[type="email"] {
   background-color: #a4c838; }
 
 [data-name="sWatch"] figcaption {
-  color: #50f0fe; }
+  color: #2fc6fe; }
 [data-name="sWatch"]:hover figcaption {
-  background-color: #50f0fe; }
+  background-color: #2fc6fe; }
 
 [data-name="cConvertor"] figcaption {
   color: #50f0fe; }
@@ -11425,6 +11428,29 @@ input[type="email"] {
   right: 0;
   bottom: -25px;
   position: absolute; }
+
+.custom-upload {
+  overflow: hidden;
+  position: relative;
+  height: 50px; }
+  .custom-upload:before {
+    content: "UPLOAD";
+    background-color: #a4c838;
+    color: #052b30;
+    text-transform: uppercase;
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #f2f6ed;
+    cursor: pointer; }
+  .custom-upload input[type="file"] {
+    opacity: 0;
+    position: relative;
+    z-index: 999;
+    top: -50px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
 
 /* custom css Start */
 /* custom css End */
