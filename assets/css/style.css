@@ -11199,69 +11199,94 @@ input[type="email"] {
     opacity: 0;
     filter: alpha(opacity=0); }
 
-.landing-wrap {
-  max-width: 920px; }
-  .landing-wrap figure {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.5); }
-    .landing-wrap figure figcaption {
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 15px 5px;
-      display: block; }
-    .landing-wrap figure:hover figcaption {
-      color: #1d3238; }
+.landing-wrap figure {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .landing-wrap figure i {
+    background-size: 64px; }
+  .landing-wrap figure figcaption {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 5px;
+    display: block; }
+  .landing-wrap figure:hover figcaption {
+    color: #1d3238; }
 
 .icon-block {
   height: 145px;
   display: block; }
 
+[data-name="shorten"] i {
+  background: url("../images/landing/scissor.svg") no-repeat center; }
 [data-name="shorten"] figcaption {
   color: #feb031; }
 [data-name="shorten"]:hover figcaption {
   background-color: #feb031; }
 
+[data-name="share"] i {
+  background: url("../images/landing/slideshare.svg") no-repeat center; }
 [data-name="share"] figcaption {
   color: #ff4f8a; }
 [data-name="share"]:hover figcaption {
   background-color: #ff4f8a; }
 
+[data-name="code"] i {
+  background: url("../images/landing/qr-code.svg") no-repeat center; }
 [data-name="code"] figcaption {
   color: #b06afe; }
 [data-name="code"]:hover figcaption {
   background-color: #b06afe; }
 
+[data-name="card"] i {
+  background: url("../images/landing/card.svg") no-repeat center; }
 [data-name="card"] figcaption {
   color: #50f0fe; }
 [data-name="card"]:hover figcaption {
   background-color: #50f0fe; }
 
-[data-name="card"] figcaption {
-  color: #50f0fe; }
-[data-name="card"]:hover figcaption {
-  background-color: #50f0fe; }
-
+[data-name="draw"] i {
+  background: url("../images/landing/draw-it.svg") no-repeat center; }
 [data-name="draw"] figcaption {
-  color: #a6815b; }
+  color: #d79858; }
 [data-name="draw"]:hover figcaption {
-  background-color: #a6815b; }
+  background-color: #d79858; }
 
+[data-name="calculator"] i {
+  background: url("../images/landing/calculator.svg") no-repeat center; }
 [data-name="calculator"] figcaption {
   color: #a4c838; }
 [data-name="calculator"]:hover figcaption {
   background-color: #a4c838; }
 
+[data-name="sWatch"] i {
+  background: url("../images/landing/stop-watch.svg") no-repeat center; }
 [data-name="sWatch"] figcaption {
   color: #2fc6fe; }
 [data-name="sWatch"]:hover figcaption {
   background-color: #2fc6fe; }
 
+[data-name="cConvertor"] i {
+  background: url("../images/landing/currencies.svg") no-repeat center; }
 [data-name="cConvertor"] figcaption {
-  color: #50f0fe; }
+  color: #b6b7b2; }
 [data-name="cConvertor"]:hover figcaption {
-  background-color: #50f0fe; }
+  background-color: #b6b7b2; }
+
+[data-name="tempConverter"] i {
+  background: url("../images/landing/temperature.svg") no-repeat center; }
+[data-name="tempConverter"] figcaption {
+  color: #feb03d; }
+[data-name="tempConverter"]:hover figcaption {
+  background-color: #feb03d; }
+
+[data-name="currency-value"] i {
+  background: url("../images/landing/currency-value.svg") no-repeat center; }
+[data-name="currency-value"] figcaption {
+  color: #ffa56e; }
+[data-name="currency-value"]:hover figcaption {
+  background-color: #ffa56e; }
 
 .material-switch > label {
   cursor: pointer;

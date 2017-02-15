@@ -1228,13 +1228,16 @@ input[type="email"] {
 
 
 .landing-wrap {
-  max-width: 920px;
+  // max-width: 920px;
   figure {
     display: inline-block;
     width: 200px;
     height: 200px;
     margin: 10px;
     background-color:rgba(#000, 0.5);
+    i {
+      background-size:64px;
+    }
     figcaption {
       background-color:rgba(#000, 0.2);
         padding: 15px 5px;
@@ -1261,6 +1264,10 @@ input[type="email"] {
 }
 
 [data-name="shorten"] {
+
+  i {
+    background:url('../images/landing/scissor.svg') no-repeat center;
+  }
   figcaption{
       color:$orange;
     }
@@ -1274,6 +1281,9 @@ input[type="email"] {
 }
 
 [data-name="share"] {
+  i {
+    background:url('../images/landing/slideshare.svg') no-repeat center;
+  }
   figcaption{
       color:$pink;
     }
@@ -1287,6 +1297,9 @@ input[type="email"] {
 }
 
 [data-name="code"] {
+  i {
+    background:url('../images/landing/qr-code.svg') no-repeat center;
+  }
   figcaption{
       color:$purple-medium;
     }
@@ -1300,20 +1313,9 @@ input[type="email"] {
 }
 
 [data-name="card"] {
-  figcaption{
-      color:$baby-blue;
-    }
-
-  &:hover {
-    figcaption{
-      background-color:$baby-blue;
-
-    }
+  i {
+    background:url('../images/landing/card.svg') no-repeat center;
   }
-}
-
-// 
-[data-name="card"] {
   figcaption{
       color:$baby-blue;
     }
@@ -1328,19 +1330,25 @@ input[type="email"] {
 
 
 [data-name="draw"] {
+  i {
+    background:url('../images/landing/draw-it.svg') no-repeat center;
+  }
   figcaption{
-      color:$sorrell-brown;
+      color:$porsche;
     }
 
   &:hover {
     figcaption{
-      background-color:$sorrell-brown;
+      background-color:$porsche;
 
     }
   }
 }
 
 [data-name="calculator"] {
+ i {
+    background:url('../images/landing/calculator.svg') no-repeat center;
+  }
   figcaption{
       color:$secondary;
     }
@@ -1354,6 +1362,9 @@ input[type="email"] {
 }
 
 [data-name="sWatch"] {
+  i {
+    background:url('../images/landing/stop-watch.svg') no-repeat center;
+  }
   figcaption{
       color:$summer-sky;
     }
@@ -1367,17 +1378,58 @@ input[type="email"] {
 }
 
 [data-name="cConvertor"] {
+  i {
+    background:url('../images/landing/currencies.svg') no-repeat center;
+  }
   figcaption{
-      color:$baby-blue;
+      color:$gray-light;
     }
 
   &:hover {
     figcaption{
-      background-color:$baby-blue;
+      background-color:$gray-light;
 
     }
   }
 }
+
+
+[data-name="tempConverter"] {
+  i {
+    background:url('../images/landing/temperature.svg') no-repeat center;
+  }
+  figcaption{
+      color:$yellow-orange;
+    }
+
+  &:hover {
+    figcaption{
+      background-color:$yellow-orange;
+
+    }
+  }
+}
+
+[data-name="currency-value"] {
+  i {
+    background:url('../images/landing/currency-value.svg') no-repeat center;
+  }
+  figcaption{
+      color:$hit-pink;
+    }
+
+  &:hover {
+    figcaption{
+      background-color:$hit-pink;
+
+    }
+  }
+}
+
+
+
+
+
 // 
 
 .material-switch > label {
